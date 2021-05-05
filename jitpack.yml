@@ -1,0 +1,14 @@
+jdk:
+  - openjdk9
+before_install:
+   - echo ./custom_setup.sh
+install:
+   - echo "Running a custom install command"
+   - echo "VERSION:${version}"
+   - mkdir -p ~/.m2/repository/com/poilabs/utils/lib/${VERSION}
+   - cp lib-1.1.2.aar ~/.m2/repository/com/poilabs/utils/lib/${VERSION}/lib-${VERSION}.aar
+   - echo "<version>${VERSION}</version></project>" >> lib-1.1.2.pom
+   - cp lib-1.1.2.pom ~/.m2/repository/com/poilabs/utils/lib/${VERSION}/lib-${VERSION}.pom
+
+env:
+   MYVAR: "custom environment variable"
