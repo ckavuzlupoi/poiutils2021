@@ -4,7 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.poilabs.utils</groupId>
   <artifactId>lib</artifactId>
-  <version>1.2.2</version>
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
@@ -86,4 +85,3 @@
       <scope>runtime</scope>
     </dependency>
   </dependencies>
-</project>
